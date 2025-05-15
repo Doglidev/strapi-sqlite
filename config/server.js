@@ -4,4 +4,7 @@ module.exports = ({ env }) => ({
   app: {
     keys: env.array('APP_KEYS')
   },
+  public: {
+    path: './public',  // <-- esta línea indica la carpeta pública relativa a la raíz
+  },
 });
